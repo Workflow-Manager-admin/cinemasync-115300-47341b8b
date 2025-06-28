@@ -1,0 +1,63 @@
+.partyroom-root {
+  min-height: 82vh; display: flex; align-items: center; justify-content: center;
+  background: var(--bg-primary, #fff);
+  padding: 2.2em 0 .4em 0;
+}
+.partyroom-main {
+  display: flex;
+  width: 98vw; max-width: 1100px; min-height: 520px;
+  gap: 2.1em;
+}
+.partyroom-player {
+  flex: 2.5; min-width: 290px; display: flex; align-items: center; justify-content: center;
+}
+.player-mock {
+  width: 100%; height: 320px;
+  background: #111a; border-radius: 18px;
+  color: #eee; display: flex;
+  align-items: center; justify-content: center;
+  font-size: 1.27em;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  box-shadow: 0 3px 20px #0001;
+}
+.partyroom-chat {
+  flex: 1.1; background: var(--bg-secondary, #f8f9fa);
+  border-radius: 14px; padding: 1.1em .6em .6em .6em;
+  box-shadow: 0 3px 12px #0001;
+  display: flex; flex-direction: column;
+  gap: .6em;
+  min-width: 220px; max-width: 330px;
+}
+.partyroom-codebar {
+  display: flex; align-items: center; gap: .4em;
+  margin-bottom: .7em; font-size: 1em;
+  color: #377;
+}
+.partyroom-chatbox {
+  flex: 1 1 auto; overflow-y: auto;
+  max-height: 260px; min-height: 60px;
+  font-size: .99em;
+  margin-bottom: .7em;
+}
+.partyroom-msg {
+  margin-bottom: .32em; color: #264;
+  background: #fff; border-radius: 4px;
+  padding: .19em .5em;
+}
+.partyroom-msg-sender { font-weight: bold; margin-right: .3em; color: #599;}
+.partyroom-msg-text { color: #253;}
+.partyroom-chatinput {
+  display: flex; gap: .5em; margin-top: .28em;
+}
+.partyroom-chatinput input {
+  flex: 1 1 auto; border-radius: 11px;
+  border: 1px solid var(--border-color, #e9ecef);
+  padding: .5em .89em;
+  font-size: 1em;
+}
+@media (max-width: 950px) {
+  .partyroom-main { flex-direction: column;}
+  .partyroom-player, .partyroom-chat { width: 96vw; max-width: none;}
+  .player-mock { height: 220px;}
+}

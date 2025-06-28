@@ -1,0 +1,99 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 2rem;
+  background-color: var(--bg-secondary, #2D3748);
+  border-bottom: 1px solid var(--border-color, #e9ecef);
+  position: sticky; top: 0; z-index: 20;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+}
+.nav-logo {
+  height: 2.1rem; width: 2.1rem; margin-right: 0.6rem;
+}
+.nav-title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: var(--text-primary, #222);
+  letter-spacing: 0.02em;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.3rem;
+}
+.nav-links a {
+  color: var(--text-primary, #222);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+  font-size: 1rem;
+}
+.nav-links a:hover {
+  color: var(--text-secondary, #F56565);
+}
+
+.nav-btn {
+  background: var(--accent, #F56565);
+  color: #fff !important;
+  padding: 0.5em 1em;
+  border-radius: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: .8em;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.nav-btn:hover {
+  background: #c94a4a;
+}
+
+.nav-end {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.nav-theme {
+  border: none;
+  background: transparent;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.nav-login, .nav-register {
+  text-decoration: none;
+  margin-left: 0.8rem;
+  font-weight: 600;
+  color: var(--button-bg, #007bff);
+}
+.nav-register {
+  color: var(--accent, #F56565);
+}
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: .7rem;
+}
+.nav-user {
+  color: var(--text-primary, #222);
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 1px dotted #8882;
+  padding: 0 .2rem;
+}
+.nav-logout {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #885;
+}
+@media (max-width: 800px) {
+  .navbar { flex-direction: column; align-items: stretch; padding: 0.6rem 0.6rem;}
+  .nav-links { flex-direction: column; gap: 0.6rem; margin: 0.3rem 0;}
+  .nav-end { margin: 0.3rem 0;}
+}
